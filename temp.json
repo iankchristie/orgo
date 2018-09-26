@@ -1,0 +1,73 @@
+{
+  "life": {
+    "name": "flare",
+    "id": "0",
+    "children": [
+      {
+        "name": "analytics",
+        "id": "1",
+        "children": [
+          {
+            "name": "cluster",
+            "id": "2",
+            "children": [
+              {
+                "name": "AgglomerativeCluster",
+                "id": "3",
+                "size": 3938
+              }
+            ]
+          },
+          {
+            "name": "something",
+            "id": "4",
+            "children": [
+              {
+                "name": "else",
+                "id": "5",
+                "size": 3938
+              }
+            ],
+            "dependencies": [
+              "3"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+
+{
+  "life": [{
+    "name": "life8",
+    "description": "Life. Figure it out.",
+    "action": "Make Great Organizational System.",
+    "id": "0",
+    "dependencies": ["1"],
+  }, {
+    "name": "something",
+    "description": "else.",
+    "action": "nice.",
+    "id": "1",
+    "dependencies": [],
+  }]
+}
+
+{
+  "life": [{
+    "name": "life8",
+    "description": "Life. Figure it out.",
+    "action": "Make Great Organizational System.",
+    "uuid": 0,
+    "dependencies": ["1"],
+    "parent": null
+  }, {
+    "name": "something",
+    "description": "else.",
+    "action": "nice.",
+    "uuid": 1,
+    "dependencies": [],
+    "parent": "0"
+  }]
+}
